@@ -133,7 +133,7 @@ width: 50%;
 .navbar__btn {
      justify-content: center;
      align-items: center;
-     width: 100%;
+
      background: var(--box--color);
      border: none;
      border-radius: 5px;
