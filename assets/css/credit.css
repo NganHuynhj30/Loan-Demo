@@ -14,6 +14,7 @@ body {
      background-color: var(--bg--color);
      overflow-x: hidden;
 }
+/*  */
 .row {
      margin-left: -13px;
      margin-right: -13px;
@@ -37,6 +38,7 @@ width: 50%;
 .col-third {
  width: 33.33333%;
 }
+/*  */
 .heading {
      text-align: center;
      color: var(--black--color);
@@ -160,106 +162,108 @@ width: 50%;
      color: rgb(201, 199, 199);
      transition: all 0.3s ease;
 }
-/* Product Section */
-.product {
+/* credit */
+.credit {
      position: relative;
 }
-.product .product__container {
+.credit .credit__container {
      width: 100%;
      position: relative;
 }
-.product .product__container img {
+ .credit__container img {
      width: 100%;
-     filter: brightness(50%);
+     filter: brightness(80%);
 }
-.product  .product__content {
+.credit  .credit__content {
      color: var(--white--color);
      position: absolute;
      bottom: 120px;
-     width: 100%;
+     max-width: 40%;
      text-align: left;
-     line-height: 80px;
      left: 200px;
-     top: 150px;
+     top: 250px;
 }
-.product .product__heading {
+.credit .credit__heading {
+     line-height: 50px;
      font-size: 50px;
 }
-.product .product__description {
+.credit .credit__description {
      font-size: 16px;
+     line-height: 80px;
+     display: block;
 }
-/* <!-- Main Section --> */
+/* Main Credit */
 #main {
      padding: 50px 100px;
 }
-.advantage-section {
-     background: #dbdada;
-     color: black;
+.credit-advantage {
      width: 100%;
-     height: 200px;
-     padding-top: 20px;
-     display: block;
+     height: 600px;
 }
 .section-heading {
      padding: 20px 40px;
      font-size: 28px;
 }
-.section-sub {
-     align-items: center;
-     padding: 20px 40px;
+.credit-list {
      font-size: 16px;
+     max-width: 100%;
+     justify-content: center;
 }
-.section-icon {
-     background-color: var(--white--color);
-     font-size: 30px;
-     border-radius: 10px;
-     color: var(--main--color);
-     flex-basis: 60px;
-     line-height: 60px;
-     padding: 12px 12px;
-     margin: 0 12px 0 0;
-     text-align: center;
+.credit-list .credit-wrapper {
+     background-color: #f5fafd;
+     height: 100%;
+     border-radius: 12px;
+     padding: 28px 40px;
+     min-height: 240px;
+     display: flex;
+     flex-direction: column;   
+     margin: 10px;  
 }
-.section-icon i {
-     display: inline-block;
-     text-align: center;
+.credit-list .credit-item {
+     margin-bottom: 24px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: end;
 }
-/* Feature */
-.feature-section {
-     padding: 60px 0;
-     color: black;
+.credit-item .credit-number {
+     font-size: 86px;
+     line-height: 86px;
+     color: #00b9ef;
+     margin-right: 8px;
+     transition: all .2s ease-in-out;
+}
+.credit-item .credit-number:hover {
+     font-size: 96px;
+}
+.credit-item .credit-unit {
+     font-size: 20px;
+     color: rgb(184, 235, 251);
+}
+.credit-item  .credit-title {
+     font-size: px;
+     font-weight: 500;
+}
+/* <!-- Feature--> */
+.credit-feature {
      width: 100%;
-     height: 300px;
-     border: 1px solid var(--main--color);
+     height: 200px;
 }
-.section-feature-sub {
+.feature-list {
+
+}
+
+.feature-content {
+     padding-left: 24px;
      font-size: 16px;
      line-height: 30px;
-     padding: 0 40px;
 }
-/* <!-- Policy --> */
-.policy-section {
-     padding-top: 20px;
-     background: #dbdada;
-     color: black;
-     width: 100%;
-     height: 450px;
-}
-.section-feature-sub {
-     font-size: 16px;
-     line-height: 30px;
-     padding: 0 40px;
-}
-.section-feature-sub img {
-     width: 100%;
-}
-/* Footer */
+/* Footer */ 
 .footer {
      padding-top: 20px;
      border-top: 4px solid var(--main--color);
 }
 .footer__heading {
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 500;
      color: var(--black--color);
      letter-spacing: 0.25px;
